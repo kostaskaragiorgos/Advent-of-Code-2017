@@ -1,0 +1,6 @@
+words = ["aa" ,"bb", "cc", "dd", "aaa"]
+
+def valid(lista):
+    if len(lista) == len(set(lista)):
+        return True
+    return False
