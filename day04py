@@ -4,3 +4,14 @@ def valid(lista):
     if len(lista) == len(set(lista)):
         return True
     return False
+
+validcounter=0
+with open("day04.txt") as f:
+    lines = f.read()
+    lines = lines.split("\n")
+    for i in lines:
+        li = list(i.split(" "))
+        if valid(li):
+            validcounter +=1
+
+print(validcounter)
